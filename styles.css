@@ -9,6 +9,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 20px;;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -25,4 +26,91 @@ html {
   --neutral-color-medium: hsl(216, 12%, 54%);
   --neutral-color-dark: hsl(213, 19%, 18%);
   --neutral-color-very-dark: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--neutral-color-very-dark);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-container {
+    border: 1px solid lime;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 25px;
+    position: relative;
+    background-color: var(--neutral-color-dark);
+}
+
+h1 {
+    color: var(--neutral-color-white);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+h1::before {
+    content: url(images/icon-star.svg);
+    position: absolute;
+    top: 20px;
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 0.937rem;
+    color: var(--neutral-color-light);
+    line-height: 1.4;
+}
+
+.rating-numbers ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    color:var(--neutral-color-light);
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom:  25px;
+}
+
+.rating-numbers li {
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--neutral-color-white);
+    text-decoration: none;
+    font-size: 0.937rem;
+    font-family: "Overpass", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    align-self: center;
+}
+
+
+.thank-you-container {
+    display: none;
 }
