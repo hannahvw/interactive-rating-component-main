@@ -155,7 +155,8 @@ p {
 .thank-you-container .selection-text {
   color: var(--primary-color);
   background-color: var(--neutral-color-dark);
-  padding: 5px 15px;
+  padding: 5px;
+  width: 100%;
   border-radius: 25px;
   margin: 15px 0 10px;
 }
