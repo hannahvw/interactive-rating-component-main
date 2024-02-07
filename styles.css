@@ -10,9 +10,10 @@
   font-size: 11px;
   text-align: center;
   margin-top: 20px;;
+   color: hsl(228, 45%, 44%);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 46%, 65%);
 }
 
 html {
@@ -38,14 +39,13 @@ body {
 }
 
 .rating-container {
-    border: 1px solid lime;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     max-width: 350px;
     padding: 25px;
     position: relative;
-    background-color: var(--neutral-color-dark);
+    background: linear-gradient(hsl(213, 19%, 14%), hsl(216, 12%, 12%))
 }
 
 h1 {
@@ -60,7 +60,7 @@ h1::before {
     content: url(images/icon-star.svg);
     position: absolute;
     top: 20px;
-    background-color: blue;
+    background-color: var(--neutral-color-dark);
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -79,7 +79,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:var(--neutral-color-light);
     list-style: none;
     margin-top: 25px;
@@ -87,7 +87,7 @@ p {
 }
 
 .rating-numbers li {
-    background-color: blue;
+    background-color: var(--neutral-color-dark);
     width: 40px;
     height: 40px;
     border-radius: 50%;
