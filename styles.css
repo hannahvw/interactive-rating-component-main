@@ -9,8 +9,8 @@
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: 20px;;
-   color: hsl(228, 45%, 44%);
+  margin-top: 20px;
+  color: hsl(228, 45%, 44%);
 }
 .attribution a {
   color: hsl(228, 46%, 65%);
@@ -30,87 +30,112 @@ html {
 }
 
 body {
-    background-color: var(--neutral-color-very-dark);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--neutral-color-very-dark);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .rating-container {
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    padding: 25px;
-    position: relative;
-    background: linear-gradient(hsl(213, 19%, 14%), hsl(216, 12%, 12%))
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  padding: 25px;
+  position: relative;
+  background: linear-gradient(hsl(213, 19%, 14%), hsl(216, 12%, 12%));
+  display: none;
 }
 
 h1 {
-    color: var(--neutral-color-white);
-    font-weight: 400;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-top: 60px;
+  color: var(--neutral-color-white);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 60px;
 }
 
 h1::before {
-    content: url(images/icon-star.svg);
-    position: absolute;
-    top: 20px;
-    background-color: var(--neutral-color-dark);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  content: url(images/icon-star.svg);
+  position: absolute;
+  top: 20px;
+  background-color: var(--neutral-color-dark);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
-    font-size: 0.937rem;
-    color: var(--neutral-color-light);
-    line-height: 1.4;
+  font-size: 0.937rem;
+  color: var(--neutral-color-light);
+  line-height: 1.4;
 }
 
 .rating-numbers ol {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 1rem;
-    color:var(--neutral-color-light);
-    list-style: none;
-    margin-top: 25px;
-    margin-bottom:  25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  color: var(--neutral-color-light);
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .rating-numbers li {
-    background-color: var(--neutral-color-dark);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--neutral-color-dark);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .submit-btn {
-    background-color: var(--primary-color);
-    color: var(--neutral-color-white);
-    text-decoration: none;
-    font-size: 0.937rem;
-    font-family: "Overpass", sans-serif;
-    text-transform: uppercase;
-    width: 100%;
-    padding: 15px;
-    border-radius: 25px;
-    text-align: center;
-    align-self: center;
+  background-color: var(--primary-color);
+  color: var(--neutral-color-white);
+  text-decoration: none;
+  font-size: 0.937rem;
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
+  align-self: center;
 }
 
-
 .thank-you-container {
-    display: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  padding: 35px 25px;
+  background: linear-gradient(hsl(213, 19%, 14%), hsl(216, 12%, 12%));
+  text-align: center;
+  gap: 10px;
+}
+
+.thank-you-container .thanks {
+  color: var(--neutral-color-white);
+  font-size: 1.5rem;
+}
+
+.thank-you-container p {
+  line-height: 1.5;
+}
+
+.thank-you-container .selection-text {
+  color: var(--primary-color);
+  background-color: var(--neutral-color-dark);
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin: 15px 0 10px;
 }
